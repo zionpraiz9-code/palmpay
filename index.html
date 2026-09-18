@@ -4,19 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PalmPay Clone</title>
+  <title>PalmPay | Say yes to more</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <div class="nav_section">
-    <nav>
+  <header class="topbar">
+    <nav class="nav container">
       <div class="palmpay-logo">
-        <a href="#"><img src="IMAGES/PALMPAY LOGO.png" alt="PalmPay"></a>
+        <a href="#"><img src="IMAGES/PALMPAY LOGO.png" alt="PalmPay logo"></a>
       </div>
 
-      <ul>
+      <ul class="nav-links">
         <li><a href="#" class="active">Company</a></li>
         <li><a href="#">Personal</a></li>
         <li><a href="#">Business</a></li>
@@ -24,58 +23,286 @@
         <li><a href="#">Newsroom</a></li>
       </ul>
 
-      <div class="nav_right">
-        <button class="btn">Log In</button>
+      <div class="nav-actions">
+        <button class="login-btn">Log In</button>
 
         <div class="country-select">
           <span class="flag">🇳🇬</span>
-          <select id="country" name="country">
+          <select aria-label="Country selection">
             <option value="nigeria">Nigeria</option>
             <option value="ghana">Ghana</option>
             <option value="kenya">Kenya</option>
-            <option value="south-africa">South Africa</option>
             <option value="cameroon">Cameroon</option>
-            <option value="egypt">Egypt</option>
-            <option value="canada">Canada</option>
-            <option value="usa">United States</option>
-            <option value="uk">United Kingdom</option>
+            <option value="tanzania">Tanzania</option>
           </select>
         </div>
       </div>
     </nav>
-  </div>
+  </header>
 
-  <div class="parent0">
-    <div class="child0">
-      <div class="header">
-        The Smarter Way
-      </div>
-      <div class="header">
-        to Bank is Here
-      </div>
-      <div class="text">Tools to help you pay, earn, save and</div>
-      <div class="text">grow - all in one app</div>
-      <div class="download-logos">
-        <div class="downlg"><img src="IMAGES/APP STORE.png" alt="App Store"></div>
-        <div class="downlg"><img src="IMAGES/PLAY STORE.png" alt="Play Store"></div>
+  <main>
+    <section class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>The Smarter Way<br>to Bank is Here</h1>
+          <p>Tools to help you pay, earn, save and<br>grow - all in one app</p>
+
+          <div class="store-links">
+            <a href="#" class="store-badge"><img src="IMAGES/PLAY STORE.png" alt="Get it on Google Play"></a>
+            <a href="#" class="store-badge"><img src="IMAGES/APP STORE.png" alt="Download on the App Store"></a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <span>Licenced by</span>
+              <span>the CBN</span>
+            </div>
+            <img src="IMAGES/CBN LOGO.png" alt="CBN logo" class="mini-logo" />
+            <div class="trust-item">
+              <span>Deposits</span>
+              <span>insured by</span>
+            </div>
+            <img src="IMAGES/NDIC LOGO.png" alt="NDIC logo" class="mini-logo" />
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-frame">
+            <img src="IMAGES/PALMPAY AD IMAGE.png" alt="PalmPay app preview">
+          </div>
+        </div>
       </div>
 
-      <div class="license">
-        <div class="license-logo">Licenced by the CBN</div>
-        <div class="license-logo"><img src="IMAGES/CBN LOGO.png" alt=""></div>
-        <div class="license-logo">Deposits insured by</div>
-        <div class="license-logo"><img src="IMAGES/NDIC LOGO.png" alt=""></div>
+      <div class="review-strip">
+        <img src="IMAGES/reviews.png" alt="Customer reviews">
+      </div>
+    </section>
+
+    <section class="features section-spacing">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Built For People Going Places</h2>
+          <p>Earn more, save smarter, and level up your life</p>
+        </div>
+
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <h3>Unlimited Free Transfers</h3>
+            <p>Fast, free &amp; reliable transfers to other PalmPay users and banks</p>
+          </div>
+          <div class="benefit-item">
+            <h3>Up to 20% Savings Interest</h3>
+            <p>Earn interest daily, withdraw anytime</p>
+          </div>
+          <div class="benefit-item">
+            <h3>Cashback on bills &amp; more</h3>
+            <p>Get rewarded for your everyday spending</p>
+          </div>
+        </div>
+
+        <div class="feature-stack">
+          <article class="feature-row reveal-left">
+            <div class="feature-copy">
+              <h3>Stop paying to send money</h3>
+              <p>PalmPay gives you unlimited free bank transfers - no daily limits, no hidden fees.</p>
+              <span>99.95% success rate within 10 seconds!</span>
+            </div>
+            <div class="feature-art art-one"></div>
+          </article>
+
+          <article class="feature-row reveal-right">
+            <div class="feature-art art-two"></div>
+            <div class="feature-copy">
+              <h3>Earn up to 20% on your savings</h3>
+              <p>You work hard for your money. We work just as hard for you. Pick from flexible and fixed plans to help you reach your goals faster.</p>
+              <span>Interest paid daily. Withdraw anytime.</span>
+            </div>
+          </article>
+
+          <article class="feature-row reveal-left">
+            <div class="feature-copy">
+              <h3>A debit card that works</h3>
+              <p>Shop online &amp; in-store. Enjoy lower fees and exclusive merchant offers.</p>
+              <span>Transact &amp; earn rewards daily!</span>
+            </div>
+            <div class="feature-art art-three"></div>
+          </article>
+
+          <article class="feature-row reveal-right">
+            <div class="feature-art art-four"></div>
+            <div class="feature-copy">
+              <h3>Get credit when you need it</h3>
+              <p>With instant approval and transparent pricing, credit on PalmPay helps you move forward.</p>
+              <span>Fuel your next move</span>
+            </div>
+          </article>
+
+          <article class="feature-row reveal-left">
+            <div class="feature-copy">
+              <h3>Cashback on bills &amp; more</h3>
+              <p>From airtime and bills to shopping, get extra value when paying with PalmPay.</p>
+              <span>Transact &amp; earn rewards daily!</span>
+            </div>
+            <div class="feature-art art-five"></div>
+          </article>
+
+          <article class="feature-row reveal-right">
+            <div class="feature-art art-six"></div>
+            <div class="feature-copy">
+              <h3>Life happens. Be covered.</h3>
+              <p>Get quick, reliable protection for health, phones, and more - no paperwork needed.</p>
+              <span>Interest paid daily. Withdraw anytime.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="security section-spacing">
+      <div class="container security-layout">
+        <div class="security-copy">
+          <h2>Your money's safe space</h2>
+
+          <div class="security-badges">
+            <div class="security-badge">
+              <span>Licenced by</span>
+              <span>the CBN</span>
+            </div>
+            <div class="security-badge">
+              <span>Deposits</span>
+              <span>insured by</span>
+            </div>
+          </div>
+
+          <div class="security-grid">
+            <div class="security-card">
+              <h3>Licenced by the CBN</h3>
+              <p>We are fully licensed by the Central Bank of Nigeria, so you can bank with confidence knowing your money is always in safe hands.</p>
+            </div>
+            <div class="security-card">
+              <h3>Reliable</h3>
+              <p>We safeguard your data and funds with advanced encryption, fraud detection, and multiple authentication layers.</p>
+            </div>
+            <div class="security-card">
+              <h3>24/7 Support</h3>
+              <p>Our customer care and fraud desk are available 24/7, with in-app reporting tools for instant support whenever you need it.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="review-panel">
+          <h3>Loved by 40 Million Users</h3>
+          <p>We are the highest-rated fintech app in Africa, with a 4.6* rating on the Google Play Store across 1.09 million reviews.</p>
+
+          <div class="review-box">
+            <div class="review-header">
+              <span class="avatar">A</span>
+              <div>
+                <strong>Anna</strong>
+                <small>8/19/25</small>
+              </div>
+            </div>
+            <p>One of the best banking apps at the moment. Quick transactions, PalmPoints, betting discounts, and Coupon that reward users. In fact, it's the only banking app with so many benefits for its users. For me, it's PalmPay forever. Highly recommended for an amazing banking experience.</p>
+          </div>
+
+          <div class="side-store-links">
+            <a href="#" class="store-badge"><img src="IMAGES/PLAY STORE.png" alt="Play Store"></a>
+            <a href="#" class="store-badge"><img src="IMAGES/APP STORE.png" alt="App Store"></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="app-cta section-spacing">
+      <div class="container cta-wrap">
+        <p>Download the<br>PalmPay app now<br>and discover a<br>smarter way to bank</p>
+
+        <div class="store-links">
+          <a href="#" class="store-badge"><img src="IMAGES/PLAY STORE.png" alt="Get it on Google Play"></a>
+          <a href="#" class="store-badge"><img src="IMAGES/APP STORE.png" alt="Download on the App Store"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-cta">
+        <p>Join <span>40 million</span> users who love PalmPay</p>
+      </div>
+      <div class="footer-links-store">
+        <a href="#" class="store-badge"><img src="IMAGES/PLAY STORE.png" alt="Google Play"></a>
+        <a href="#" class="store-badge"><img src="IMAGES/APP STORE.png" alt="App Store"></a>
       </div>
     </div>
 
-    <div class="child0">
-      <img src="IMAGES/PALMPAY AD IMAGE.png" alt="PalmPay App">
+    <div class="container footer-grid">
+      <div>
+        <h4>Personal</h4>
+        <ul>
+          <li>PalmPay App</li>
+          <li>Send and Receive Money</li>
+          <li>Bill Payment</li>
+          <li>Buy and Shop</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business</h4>
+        <ul>
+          <li>Payin</li>
+          <li>Payout</li>
+          <li>POS</li>
+          <li>Pay with Transfer</li>
+          <li>Business Account</li>
+          <li>Management</li>
+          <li>Agent Network</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Press and Media</li>
+          <li>Contact</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Cookie Policy</li>
+          <li>Loan Privacy Policy</li>
+          <li>Terms &amp; Conditions</li>
+          <li>Complaints</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="socials">
+        <span>◎</span>
+        <span>f</span>
+        <span>X</span>
+        <span>in</span>
+      </div>
+      <p>© 2026 PalmPay. All rights reserved.</p>
+      <p>PalmPay is a financial service provided by PalmPay Limited, licensed and regulated by the Central Bank of Nigeria (CBN). Deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC). Loan services on PalmPay are provided by Flexi Microfinance Bank Limited, licensed by the Central Bank of Nigeria (CBN). We empower individuals and businesses with payments solutions, high-yield investment opportunities, and easy-to-use tools for financial management. We are a global company with a presence in Nigeria, Ghana, Tanzania, and the United Kingdom.</p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner">
+    <div class="cookie-content">
+      <img src="IMAGES/PALMPAY LOGO.png" alt="PalmPay logo" class="cookie-logo" />
+      <p>PalmPay uses cookies and other tracking technologies to improve your user experience on our website, media channel, mobile website, mobile application related or connected. Cookies help you navigate efficiently and improve functionality. You can accept or manage your cookie preferences. To learn more about our use of cookies, view our detailed <a href="#">Cookie Policy</a>.</p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn accept">Yes, I accept</button>
+      <button class="cookie-btn reject">No, reject all</button>
+      <button class="cookie-btn settings">Cookie Settings</button>
     </div>
   </div>
-  <div class="underlay">
-    <div class="underlay-img"><img src="IMAGES/reviews.png" alt=""></div>
-  </div>
-
 </body>
 
 </html>
