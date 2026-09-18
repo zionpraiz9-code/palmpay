@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding-top: 65px;
+}
+
+/* ===== NAV ===== */
+.nav_section {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-bottom: 3px solid #7B2FF7;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 65px;
+  padding: 0 40px;
+}
+
+.palmpay-logo img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+ul li a.active {
+  color: #7B2FF7;
+}
+
+ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: #7B2FF7;
+  border-radius: 2px;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  background-color: #7B2FF7;
+  border-radius: 50px;
+  height: 38px;
+  padding: 0 22px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6a22e0;
+}
+
+.country-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f2f0f7;
+  border-radius: 50px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.country-select .flag {
+  font-size: 16px;
+}
+
+.country-select select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* ===== HERO SECTION ===== */
+.parent0 {
+  display: flex;
+  flex-wrap: nowrap; /* keeps the two child divs on the same line always */
+  min-height: 420px;
+  background: linear-gradient(135deg, #9b1fe0 0%, #7B2FF7 50%, #6413e7 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 -20px 30px -10px rgba(0, 0, 0, 0.35);
+}
+
+.child0 {
+  flex: 1;
+  min-width: 0; /* lets both sides shrink instead of forcing a wrap/overflow */
+}
+
+/* left side — text content, vertically centered */
+.child0:first-child {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  color: #f1e9ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.text:first-of-type {
+  margin-top: 20px;
+}
+
+.download-logos {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.downlg img {
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.license {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  color: #f1e9ff;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.license-logo {
+  display: flex;
+  align-items: center;
+}
+
+.license-logo img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+/* right side — image, always beside the text, contained within the section */
+.child0:last-child {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.child0:last-child img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
+
+.underlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90px;
+  background-color: #5b07e0;
+  padding: 16px 24px;
+}
+
+.underlay-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underlay-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
